@@ -114,7 +114,7 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-7 row-item">Depresiaciones y amortizaciones:</div>
+              <div class="col-7 row-item">Depreciaciones y amortizaciones:</div>
               <div class="col row-item2">
                 <b-form-input
                   class="inp"
@@ -472,16 +472,18 @@ export default {
   },
   async created() {
     await this.getEstadoResultados();
-    setTimeout(() => {this.colocarInfo()}, 1000);
+    setTimeout(() => {
+      this.colocarInfo();
+    }, 1000);
   },
   methods: {
     ...mapActions(["getEstadoResultados", "EditEstadoResultados"]),
-    colocarInfo(){
-        this.EstadoResultados.forEach(e => {
-            if (e.anio == this.$route.query.anio) {
-                this.doc = e;
-            }
-        });
+    colocarInfo() {
+      this.EstadoResultados.forEach((e) => {
+        if (e.anio == this.$route.query.anio) {
+          this.doc = e;
+        }
+      });
     },
     async save() {
       let estado = { ...this.doc };
@@ -508,7 +510,9 @@ export default {
           parseFloat(estado.ingreso_de_operaciones.intereses_inversiones) +
           parseFloat(estado.ingreso_de_operaciones.intereses_depositos) +
           parseFloat(estado.ingreso_de_operaciones.interes_prestamos) +
-          parseFloat(estado.ingreso_de_operaciones.comisiones_y_otros_ingresos) -
+          parseFloat(
+            estado.ingreso_de_operaciones.comisiones_y_otros_ingresos
+          ) -
           (parseFloat(estado.costos_operacion.intereses_sobre_prestamos) +
             parseFloat(estado.costos_operacion.comisiones_sobre_titulos) +
             parseFloat(estado.costos_operacion.comisiones_y_otros)) -
@@ -518,14 +522,18 @@ export default {
           parseFloat(estado.ingreso_de_operaciones.intereses_inversiones) +
           parseFloat(estado.ingreso_de_operaciones.intereses_depositos) +
           parseFloat(estado.ingreso_de_operaciones.interes_prestamos) +
-          parseFloat(estado.ingreso_de_operaciones.comisiones_y_otros_ingresos) -
+          parseFloat(
+            estado.ingreso_de_operaciones.comisiones_y_otros_ingresos
+          ) -
           (parseFloat(estado.costos_operacion.intereses_sobre_prestamos) +
             parseFloat(estado.costos_operacion.comisiones_sobre_titulos) +
             parseFloat(estado.costos_operacion.comisiones_y_otros)) -
           parseFloat(estado.costos_operacion.reservas_de_saneamiento) -
           (parseFloat(estado.gastos_operacion.generales) +
             parseFloat(estado.gastos_operacion.funcionarios_y_empleados) +
-            parseFloat(estado.gastos_operacion.depresiaciones_y_amortizaciones)),
+            parseFloat(
+              estado.gastos_operacion.depresiaciones_y_amortizaciones
+            )),
 
         total_otros_ingresos_y_gastos:
           parseFloat(estado.otros_ingreso_y_gastos.otros_ingresos) -
@@ -535,14 +543,18 @@ export default {
           parseFloat(estado.ingreso_de_operaciones.intereses_inversiones) +
           parseFloat(estado.ingreso_de_operaciones.intereses_depositos) +
           parseFloat(estado.ingreso_de_operaciones.interes_prestamos) +
-          parseFloat(estado.ingreso_de_operaciones.comisiones_y_otros_ingresos) -
+          parseFloat(
+            estado.ingreso_de_operaciones.comisiones_y_otros_ingresos
+          ) -
           (parseFloat(estado.costos_operacion.intereses_sobre_prestamos) +
             parseFloat(estado.costos_operacion.comisiones_sobre_titulos) +
             parseFloat(estado.costos_operacion.comisiones_y_otros)) -
           parseFloat(estado.costos_operacion.reservas_de_saneamiento) -
           (parseFloat(estado.gastos_operacion.generales) +
             parseFloat(estado.gastos_operacion.funcionarios_y_empleados) +
-            parseFloat(estado.gastos_operacion.depresiaciones_y_amortizaciones)) +
+            parseFloat(
+              estado.gastos_operacion.depresiaciones_y_amortizaciones
+            )) +
           (parseFloat(estado.otros_ingreso_y_gastos.otros_ingresos) -
             parseFloat(estado.otros_ingreso_y_gastos.otros_gastos)) +
           parseFloat(estado.gastos_operacion.dividendos),
@@ -590,8 +602,10 @@ export default {
       estado.impuesto_sobre_la_renta = impuesto_sobre_la_renta.toFixed(1);
       estado.efecto_fiscal.impuesto_sobre_la_renta =
         totales.total_impuestos_renta.toFixed(1);
-      estado.costos_operacion.utilidad_antes_gastos = totales.total_utilidad_antes_de_gastos.toFixed(1);
-      estado.gastos_operacion.utilidad_operacional = totales.total_utilidad_de_operacion.toFixed(1);
+      estado.costos_operacion.utilidad_antes_gastos =
+        totales.total_utilidad_antes_de_gastos.toFixed(1);
+      estado.gastos_operacion.utilidad_operacional =
+        totales.total_utilidad_de_operacion.toFixed(1);
       //console.log(estado);
 
       //Guardamos el estado de resultados
