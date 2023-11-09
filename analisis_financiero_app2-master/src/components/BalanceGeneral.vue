@@ -42,6 +42,8 @@
           </div>
         </div>
         <div>
+
+          
               <button @click="newBalance()" class="btn-view-all shadow-sm">Agregar nuevo balance</button>
         </div>
       </div>
@@ -61,6 +63,7 @@
         </div>
         <div class="row text-inicial">
           Seleccione una cuenta para ver su balance general
+          {{ report.id }}
         </div>
       </div>
       <div class="bl" v-if="report === true">
