@@ -73,7 +73,7 @@
               <div class="row mt-5 card-integrantes">
                 <div class="col-5">
                   <b-img
-                    src=""
+                    src="../assets/edwin.jpeg"
                     fluid
                     class="img-creadores"
                   ></b-img>
@@ -86,7 +86,7 @@
               <div class="row card-integrantes">
                 <div class="col-5">
                   <b-img
-                    src=""
+                    src="../assets/manuel.jpeg"
                     fluid
                     class="img-creadores"
                   ></b-img>
