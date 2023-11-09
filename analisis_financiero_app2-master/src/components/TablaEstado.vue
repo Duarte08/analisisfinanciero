@@ -2,53 +2,53 @@
   <div class="ctn">
     <div class="right-menu shadow-sm">
       <button
-      class="btn-export"
-      @click="exportToPDF()"
-      data-bs-toggle="tooltip"
-      data-bs-placement="left"
-      title="Exportar como PDF"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
-        fill="currentColor"
-        class="bi bi-download icon-export"
-        viewBox="0 0 16 16"
+        class="btn-export"
+        @click="exportToPDF()"
+        data-bs-toggle="tooltip"
+        data-bs-placement="left"
+        title="Exportar como PDF"
       >
-        <path
-          d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
-        />
-        <path
-          d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
-        />
-      </svg>
-    </button>
-    <button
-      class="btn-edit"
-      @click="editEstado()"
-      data-bs-toggle="tooltip"
-      data-bs-placement="left"
-      title="Editar documento"
-    >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="20"
-        height="20"
-        fill="currentColor"
-        class="bi bi-pencil-square icon-edit"
-        viewBox="0 0 16 16"
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-download icon-export"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+          />
+          <path
+            d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+          />
+        </svg>
+      </button>
+      <button
+        class="btn-edit"
+        @click="editEstado()"
+        data-bs-toggle="tooltip"
+        data-bs-placement="left"
+        title="Editar documento"
       >
-        <path
-          d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
-        />
-        <path
-          fill-rule="evenodd"
-          d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"
-        />
-      </svg>
-    </button>
-    <!--
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-pencil-square icon-edit"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"
+          />
+          <path
+            fill-rule="evenodd"
+            d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"
+          />
+        </svg>
+      </button>
+      <!--
     <button
       class="btn-del"
       @click="edit()"
@@ -74,9 +74,8 @@
       </svg>
     </button>
       
-    -->
-    </div>
-    
+    --></div>
+
     <div id="element-to-convert" class="container mb-3 mt-4">
       <br />
       <div class="row rows-principal">BANCO DE DESAROLLO DE EL SALVADOR</div>
@@ -185,7 +184,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col cuenta">Dididendos</div>
+        <div class="col cuenta">Dividendos</div>
         <div class="col numeros">
           {{ report.gastos_operacion.dividendos }}
         </div>
@@ -226,7 +225,7 @@
           {{ report.utilidad_antes_impuestos.impuesto_sobre_la_renta }}
         </div>
       </div>
-      <div class="row continuacion ">
+      <div class="row continuacion">
         <div class="col cuenta">
           contribucion especial plan de seguridad ciudada
         </div>
@@ -282,20 +281,23 @@ export default {
       html2pdf(document.getElementById("element-to-convert"), {
         margin: 1,
         filename: name,
+        // eslint-disable-next-line no-dupe-keys
         margin: [1, 0, 1, 0], // [top, right, bottom, left]
         jsPDF: { unit: "in" },
       });
 
       await this.$swal.fire({
         icon: "success",
-        title: 'Se ha exportado el balance general a PDF',
+        title: "Se ha exportado el balance general a PDF",
         toast: true,
         position: "top-end",
         showConfirmButton: false,
         timer: 3500,
         timerProgressBar: true,
         didOpen: (toast) => {
+          // eslint-disable-next-line no-undef
           toast.addEventListener("mouseenter", Swal.stopTimer);
+          // eslint-disable-next-line no-undef
           toast.addEventListener("mouseleave", Swal.resumeTimer);
         },
       });
@@ -304,7 +306,7 @@ export default {
       const anioEdit = this.report.anio;
       this.$router.push({
         path: "editar_estado",
-        query: {anio:anioEdit}
+        query: { anio: anioEdit },
       });
     },
   },
@@ -353,7 +355,6 @@ export default {
   margin-left: 50px;
 }
 
-
 .btn-export {
   position: fixed;
   top: 90px;
@@ -370,10 +371,9 @@ export default {
   color: black;
 }
 
-.icon-export{
- margin-top: -9px;
+.icon-export {
+  margin-top: -9px;
 }
-
 
 .btn-edit {
   position: fixed;
@@ -391,10 +391,9 @@ export default {
   background-color: #f8f8f8;
 }
 
-.icon-edit{
- margin-top: -3px;
+.icon-edit {
+  margin-top: -3px;
 }
-
 
 .btn-del {
   position: fixed;
@@ -411,11 +410,11 @@ export default {
   background-color: #f8f8f8;
   color: black;
 }
-.icon-del{
- margin-top: -3px;
+.icon-del {
+  margin-top: -3px;
 }
 
-.right-menu{
+.right-menu {
   position: fixed;
   top: 40px;
   right: 0px;

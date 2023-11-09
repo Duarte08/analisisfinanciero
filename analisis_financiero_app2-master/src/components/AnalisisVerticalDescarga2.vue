@@ -93,7 +93,7 @@
               <div class="item text-header">
                 <span class="text-center"> {{ estado2.anio }}</span>
               </div>
-              
+
               <div class="item text-header">
                 <span class="text-center ml-2">%</span>
               </div>
@@ -106,10 +106,11 @@
                   {{ estado1.ingreso_de_operaciones.interes_prestamos }}</span
                 >
               </div>
-              
+
               <div class="item mt-3">
                 <span class="text-center">
-                  {{ var_rel_2.ingreso_de_operaciones.interes_prestamos }} %</span
+                  {{ var_rel_2.ingreso_de_operaciones.interes_prestamos }}
+                  %</span
                 >
               </div>
               <div class="item mt-3">
@@ -120,8 +121,7 @@
               <div class="item mt-3">
                 <span class="text-center">
                   {{ var_abs_2.ingreso_de_operaciones.interes_prestamos }} %
-                  </span
-                >
+                </span>
               </div>
             </div>
 
@@ -133,12 +133,13 @@
                   }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{
                     var_rel_2.ingreso_de_operaciones.comisiones_y_otros_ingresos
-                  }} %</span
+                  }}
+                  %</span
                 >
               </div>
               <div class="item mt-2">
@@ -152,9 +153,9 @@
                 <span class="text-center">
                   {{
                     var_abs_2.ingreso_de_operaciones.comisiones_y_otros_ingresos
-                  }} %
-                  </span
-                >
+                  }}
+                  %
+                </span>
               </div>
             </div>
 
@@ -180,7 +181,7 @@
                   }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{ var_abs_2.ingreso_de_operaciones.intereses_inversiones }}
@@ -197,9 +198,8 @@
               </div>
               <div class="item mt-2">
                 <span class="text-center">
-                  {{
-                    var_rel_2.ingreso_de_operaciones.intereses_depositos
-                  }} %</span
+                  {{ var_rel_2.ingreso_de_operaciones.intereses_depositos }}
+                  %</span
                 >
               </div>
               <div class="item mt-2">
@@ -207,7 +207,7 @@
                   {{ estado2.ingreso_de_operaciones.intereses_depositos }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{ var_abs_2.ingreso_de_operaciones.intereses_depositos }}
@@ -228,7 +228,8 @@
                 <span class="text-center">
                   {{
                     var_rel_2.ingreso_de_operaciones.total_ingresos_operacion
-                  }} %</span
+                  }}
+                  %</span
                 >
               </div>
               <div class="item mt-2">
@@ -238,7 +239,7 @@
                   }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{
@@ -258,9 +259,8 @@
               </div>
               <div class="item mt-3">
                 <span class="text-center">
-                  {{
-                    var_rel_2.costos_operacion.intereses_sobre_prestamos
-                  }} %</span
+                  {{ var_rel_2.costos_operacion.intereses_sobre_prestamos }}
+                  %</span
                 >
               </div>
               <div class="item mt-3">
@@ -268,7 +268,7 @@
                   {{ estado2.costos_operacion.intereses_sobre_prestamos }}</span
                 >
               </div>
-              
+
               <div class="item mt-3">
                 <span class="text-center">
                   {{ var_abs_2.costos_operacion.intereses_sobre_prestamos }}
@@ -285,9 +285,8 @@
               </div>
               <div class="item mt-2">
                 <span class="text-center">
-                  {{
-                    var_rel_2.costos_operacion.comisiones_sobre_titulos
-                  }} %</span
+                  {{ var_rel_2.costos_operacion.comisiones_sobre_titulos }}
+                  %</span
                 >
               </div>
               <div class="item mt-2">
@@ -295,7 +294,7 @@
                   {{ estado2.costos_operacion.comisiones_sobre_titulos }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{ var_abs_2.costos_operacion.comisiones_sobre_titulos }}
@@ -320,7 +319,7 @@
                   {{ estado2.costos_operacion.comisiones_y_otros }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{ var_abs_2.costos_operacion.comisiones_y_otros }}
@@ -337,7 +336,8 @@
               </div>
               <div class="item mt-2">
                 <span class="text-center">
-                  {{ var_rel_2.costos_operacion.total_costos_operacion }} %</span
+                  {{ var_rel_2.costos_operacion.total_costos_operacion }}
+                  %</span
                 >
               </div>
               <div class="item mt-2">
@@ -345,7 +345,7 @@
                   {{ estado2.costos_operacion.total_costos_operacion }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{ var_abs_2.costos_operacion.total_costos_operacion }}
@@ -362,7 +362,8 @@
               </div>
               <div class="item mt-2">
                 <span class="text-center">
-                  {{ var_rel_2.costos_operacion.reservas_de_saneamiento }} %</span
+                  {{ var_rel_2.costos_operacion.reservas_de_saneamiento }}
+                  %</span
                 >
               </div>
               <div class="item mt-2">
@@ -370,7 +371,7 @@
                   {{ estado2.costos_operacion.reservas_de_saneamiento }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{ var_abs_2.costos_operacion.reservas_de_saneamiento }}
@@ -396,7 +397,7 @@
                   {{ estado2.costos_operacion.utilidad_antes_gastos }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{ var_abs_2.costos_operacion.utilidad_antes_gastos }}
@@ -415,9 +416,8 @@
 
               <div class="item mt-3">
                 <span class="text-center">
-                  {{
-                    var_rel_2.gastos_operacion.funcionarios_y_empleados
-                  }} %</span
+                  {{ var_rel_2.gastos_operacion.funcionarios_y_empleados }}
+                  %</span
                 >
               </div>
               <div class="item mt-3">
@@ -425,8 +425,6 @@
                   {{ estado2.gastos_operacion.funcionarios_y_empleados }}</span
                 >
               </div>
-
-              
 
               <div class="item mt-3">
                 <span class="text-center">
@@ -446,13 +444,13 @@
                 <span class="text-center">
                   {{ var_rel_2.gastos_operacion.generales }} %</span
                 >
-              </div> 
+              </div>
               <div class="item mt-2">
                 <span class="text-center">
                   {{ estado2.gastos_operacion.generales }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{ var_abs_2.gastos_operacion.generales }}
@@ -473,7 +471,8 @@
                 <span class="text-center">
                   {{
                     var_rel_2.gastos_operacion.depresiaciones_y_amortizaciones
-                  }} %</span
+                  }}
+                  %</span
                 >
               </div>
               <div class="item mt-2">
@@ -483,7 +482,7 @@
                   }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{
@@ -502,7 +501,8 @@
               </div>
               <div class="item mt-2">
                 <span class="text-center">
-                  {{ var_rel_2.gastos_operacion.total_gastos_operacion }} %</span
+                  {{ var_rel_2.gastos_operacion.total_gastos_operacion }}
+                  %</span
                 >
               </div>
               <div class="item mt-2">
@@ -510,7 +510,7 @@
                   {{ estado2.gastos_operacion.total_gastos_operacion }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{ var_abs_2.gastos_operacion.total_gastos_operacion }}
@@ -537,8 +537,6 @@
                 >
               </div>
 
-              
-
               <div class="item mt-3">
                 <span class="text-center">
                   {{ var_abs_2.gastos_operacion.utilidad_operacional }}
@@ -563,7 +561,7 @@
                   {{ estado2.gastos_operacion.dividendos }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{ var_abs_2.gastos_operacion.dividendos }}
@@ -592,7 +590,6 @@
                 >
               </div>
 
-             
               <div class="item mt-3">
                 <span class="text-center">
                   {{ var_abs_2.otros_ingreso_y_gastos.otros_ingresos }}
@@ -617,7 +614,7 @@
                   {{ estado2.otros_ingreso_y_gastos.otros_gastos }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{ var_abs_2.otros_ingreso_y_gastos.otros_gastos }}
@@ -639,7 +636,8 @@
                   {{
                     var_rel_2.otros_ingreso_y_gastos
                       .total_otros_ingresos_y_gastos
-                  }} %</span
+                  }}
+                  %</span
                 >
               </div>
               <div class="item mt-2">
@@ -649,7 +647,7 @@
                   }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{
@@ -674,7 +672,8 @@
                 <span class="text-center">
                   {{
                     var_rel_2.utilidad_antes_impuestos.utilidad_antes_impuestos
-                  }} %</span
+                  }}
+                  %</span
                 >
               </div>
 
@@ -685,8 +684,6 @@
                   }}</span
                 >
               </div>
-
-              
 
               <div class="item mt-2">
                 <span class="text-center">
@@ -711,7 +708,8 @@
                 <span class="text-center">
                   {{
                     var_rel_2.utilidad_antes_impuestos.impuesto_sobre_la_renta
-                  }} %</span
+                  }}
+                  %</span
                 >
               </div>
 
@@ -722,8 +720,6 @@
                   }}</span
                 >
               </div>
-
-              
 
               <div class="item mt-3">
                 <span class="text-center">
@@ -750,7 +746,8 @@
                   {{
                     var_rel_2.utilidad_antes_impuestos
                       .contribucion_especial_plan_de_seguridad_ciudada
-                  }} %</span
+                  }}
+                  %</span
                 >
               </div>
               <div class="item mt-2">
@@ -761,7 +758,7 @@
                   }}</span
                 >
               </div>
-              
+
               <div class="item mt-2">
                 <span class="text-center">
                   {{
@@ -779,13 +776,13 @@
               </div>
 
               <div class="item mt-4">
-                <span class="text-center"> {{ var_rel_2.utilidad_neta }} %</span>
+                <span class="text-center">
+                  {{ var_rel_2.utilidad_neta }} %</span
+                >
               </div>
               <div class="item mt-4">
                 <span class="text-center"> {{ estado2.utilidad_neta }}</span>
               </div>
-
-              
 
               <div class="item mt-4">
                 <span class="text-center">
